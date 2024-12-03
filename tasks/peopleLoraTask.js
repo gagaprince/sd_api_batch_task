@@ -1,4 +1,4 @@
-import { getGirlLoraList, getLoraForPeoplePromptList } from '../prompt';
+import { getGirlLoraList, getLoraForPeoplePromptList, getTeacherPromptList, getTeacherGirlRoleList } from '../prompt';
 import { post_txt2img } from '../api'
 import { STORY_IMAGE_OUTPUT_DIR } from '../config';
 import { saveBase64Image } from "../utils";
@@ -15,22 +15,24 @@ const generateImage = async (storyPrompt, girlRole, width=720, height=1280)=>{
 
         const data = await post_txt2img({
             prompt: desPrompt,
-            "negative_prompt": "score_6,score_5,score_4,source_pony,mosaic,(worst quality:1.2),(male looks to the camera),(male outcrop:2),(male appearance:2),(low quality:1.2),(normal quality:1.2),lowres,bad anatomy,bad hands,signature,watermarks,ugly,imperfect eyes,skewed eyes,unnatural face,unnatural body,error,extra limb,missing limbs,painting by bad-artist,bathtub,",
+            "negative_prompt": "score_6,score_5,score_4,source_pony,mosaic,(worst quality:1.2),(male looks to the camera),(male outcrop:2),(male appearance:2),(low quality:1.2),(normal quality:1.2),lowres,bad anatomy,bad hands,signature,watermarks,ugly,imperfect eyes,skewed eyes,unnatural face,unnatural body,error,extra limb,missing limbs,painting by bad-artist,bathtub,cleavage",
             "seed": -1,
             "steps": 20,
-            "cfg_scale": 5,
+            "cfg_scale": 6,
+            "sampler_index":"Euler a",
             width,
             height,
-            "batch_size":4,
+            "batch_size":2,
             "alwayson_scripts": {
                 "ADetailer": {
                   "args": [
-                    false,
+                    true,
                     {
                       "ad_model": "face_yolov8n.pt",
                       "ad_prompt": desAdetailerPrompt,
                       "ad_negative_prompt": "",
                       "ad_confidence": 0.8,
+                      "ad_denoising_strength":0.4,
                       "ad_mask_k_largest": 0,
                       "ad_mask_min_ratio": 0.0,
                       "ad_mask_max_ratio": 1.0,
@@ -54,14 +56,26 @@ const generateImage = async (storyPrompt, girlRole, width=720, height=1280)=>{
 export const peopleLoraTaskForForest = async ()=>{
     // const storyPromptList = getForestStoryPromptList();
     // const girlRoleList = getGirlRoleList();
-    const peopleLoraPromptList = getLoraForPeoplePromptList();
-    const peopleLoraGirlRoleList = getGirlLoraList();
+    // const peopleLoraPromptList = getLoraForPeoplePromptList();
+    // const peopleLoraGirlRoleList = getGirlLoraList();
 
-    for(let i=0;i<peopleLoraGirlRoleList.length;i++){
-        const girlRole = peopleLoraGirlRoleList[i];
-        for(let j=0;j<peopleLoraPromptList.length;j++){
-            const storyPrompt = peopleLoraPromptList[j];
-            await generateImage(storyPrompt, girlRole, 1024, 1024);
+    // for(let i=0;i<peopleLoraGirlRoleList.length;i++){
+    //     const girlRole = peopleLoraGirlRoleList[i];
+    //     for(let j=0;j<peopleLoraPromptList.length;j++){
+    //         const storyPrompt = peopleLoraPromptList[j];
+    //         await generateImage(storyPrompt, girlRole, 1024, 1024);
+    //     }
+    // }
+
+
+    const teacherLoraPromptList = getTeacherPromptList();
+    const teacherLoraGirlRoleList = getTeacherGirlRoleList();
+
+    for(let i=0;i<teacherLoraGirlRoleList.length;i++){
+        const girlRole = teacherLoraGirlRoleList[i];
+        for(let j=0;j<teacherLoraPromptList.length;j++){
+            const storyPrompt = teacherLoraPromptList[j];
+            await generateImage(storyPrompt, girlRole, 720, 1280);
         }
     }
 

@@ -21,7 +21,7 @@ const generateTask = async (prompt, movPath, movFilePath='', width=720, height=1
                             "enabled": true, 
                             "control_mode": 0,  
                             "model": "control_v11f1e_sd15_tile [a371b31b]", 
-                            "module": "tile_colorfix+sharp",
+                            "module": "tile_colorfix",
                             "weight": 0.4, 
                             "resize_mode": "Crop and Resize",
                             "threshold_a": 8,
@@ -31,6 +31,7 @@ const generateTask = async (prompt, movPath, movFilePath='', width=720, height=1
                             "pixel_perfect": true,
                             "processor_res": 512, 
                             "save_detected_map": false,
+                            "control_mode":"Balanced",
                             // "input_image": base64Img, 
                         },
                         {
@@ -38,13 +39,14 @@ const generateTask = async (prompt, movPath, movFilePath='', width=720, height=1
                             "control_mode": 0,  
                             "model": "control_v11p_sd15_lineart [43d4be0d]", 
                             "module": "lineart_realistic",
-                            "weight": 0.5, 
+                            "weight": 0.7, 
                             "resize_mode": "Crop and Resize",
                             "guidance_start": 0, 
                             "guidance_end": 1, 
                             "pixel_perfect": true,
                             "processor_res": 512, 
                             "save_detected_map": false,
+                            "control_mode":"Balanced",
                             // "input_image": base64Img, 
                         }
                     ]
@@ -120,6 +122,7 @@ const generatePreviewTask = async (base64Img, width=720, height=1280)=>{
                             "processor_res": 512, 
                             "save_detected_map": false,
                             "input_image": base64Img, 
+                            "control_mode":"Balanced",
                         },
                         {
                             "enabled": true, 
@@ -134,6 +137,7 @@ const generatePreviewTask = async (base64Img, width=720, height=1280)=>{
                             "processor_res": 512, 
                             "save_detected_map": false,
                             "input_image": base64Img, 
+                            "control_mode":"Balanced",
                         }
                     ]
                 }
@@ -143,7 +147,7 @@ const generatePreviewTask = async (base64Img, width=720, height=1280)=>{
         console.log(ret.info);
         const images = ret.images;
         for(let i=0; i<images.length; i++){
-            await saveBase64Image(`${STORY_IMAGE_OUTPUT_DIR}/${Date.now()}-${i}-${width}-${height}.png`, images[i]);
+            await saveBase64Image(`${MOV2ANIME_PREVIEW_DIR}/${Date.now()}-${i}-${width}-${height}.png`, images[i]);
         }
     }catch(e){
         console.error(e);
