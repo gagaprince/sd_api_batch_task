@@ -88,36 +88,60 @@ export const beginBatchTask = ()=>{
         //     outName: '20241117_xiaohuang_pony',
         // },
         // {   
-        //     dirKey: 'shiyaoyaona',
-        //     outName: '20241117_shiyaoyaona_pony',
+        //     dirKey: 'wangqiaochu',
+        //     outName: '20250122_wangqiaochu_pony',
         // },
         // {
-        //     dirKey: 'zhouzhouzi',
-        //     outName: '20241130_zhouzhouzi_pony',
+        //     dirKey: 'zhouhongdou',
+        //     outName: '20250129_zhouhongdou_pony',
+        // },
+        // {
+        //     dirKey: 'yiiin',
+        //     outName: '20250208_yiiin_pony',
+        // },
+        // {
+        //     dirKey: 'lebaoei',
+        //     outName: '20250208_lebaoei_pony',
+        // },
+        // {
+        //     dirKey: 'yuyexiaoxuan',
+        //     outName: '20250208_yuyexiaoxuan_pony',
+        // },
+        // {
+        //     dirKey: 'lldmv',
+        //     outName: '20250208_lldmv_pony',
+        // },
+        // {
+        //     dirKey: 'xingxing',
+        //     outName: '20250208_xingxing_pony',
         // },
         {
-            dirKey: 'xiaoyuye',
-            outName: '20241203_xiaoyuye_pony',
+            dirKey: 'lanyangyang',
+            outName: '20250209_lanyangyang_pony',
         },
         {
-            dirKey: 'chihaochide',
-            outName: '20241203_chihaochide_pony',
+            dirKey: 'songjin',
+            outName: '20250209_songjin_pony',
+        },
+        {
+            dirKey: 'maotai',
+            outName: '20250209_maotai_pony',
         },
         // {
-        //     dirKey: 'yeyuanxinzhizhu',
-        //     outName: '20241202_yeyuanxinzhizhu_pony',
+        //     dirKey: 'please',
+        //     outName: '20250105_please_pony',
         // },
         // {
-        //     dirKey: 'yaho',
-        //     outName: '20241202_yaho_pony',
+        //     dirKey: 'rekeke',
+        //     outName: '20250105_rekeke_pony',
         // },
         // {
-        //     dirKey: 'meiyoubing',
-        //     outName: '20241201_meiyoubing_pony',
+        //     dirKey: 'liaoliao',
+        //     outName: '20250105_liaoliao_pony',
         // },
         // {
-        //     dirKey: 'nini',
-        //     outName: '20241201_nini_pony',
+        //     dirKey: 'jiayi',
+        //     outName: '20250105_jiayi_pony',
         // }
     ]
 
