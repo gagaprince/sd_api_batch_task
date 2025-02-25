@@ -15,7 +15,7 @@ const generateImage = async (storyPrompt, girlRole, width=720, height=1280)=>{
 
         const data = await post_txt2img({
             prompt: desPrompt,
-            "negative_prompt": "score_6,score_5,score_4,source_pony,(worst quality:1.4),(low quality:1.4),(normal quality:1.4),lowres,bad anatomy,bad hands,signature,watermarks,ugly,imperfect eyes,skewed eyes,unnatural face,unnatural body,error,extra limb,missing limbs,painting by bad-artist,red lips,(shoes:1.2),bad feet,too many toes,extra toes,high heels,curly hair,ugly face,badly drawn face,blurry,nipples,cleavage",
+            "negative_prompt": "score_6,score_5,score_4,source_pony,(worst quality:1.4),(low quality:1.4),(normal quality:1.4),lowres,bad anatomy,bad hands,signature,watermarks,ugly,imperfect eyes,skewed eyes,unnatural face,unnatural body,error,extra limb,missing limbs,painting by bad-artist,red lips,(shoes:1.2),bad feet,too many toes,extra toes,high heels,curly hair,ugly face,badly drawn face,blurry,nipples",
             "seed": -1,
             "steps": 20,
             "cfg_scale": 6,
