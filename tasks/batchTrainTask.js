@@ -115,26 +115,26 @@ export const beginBatchTask = ()=>{
         //     dirKey: 'xingxing',
         //     outName: '20250208_xingxing_pony',
         // },
-        {
-            dirKey: 'lanyangyang',
-            outName: '20250209_lanyangyang_pony',
-        },
-        {
-            dirKey: 'songjin',
-            outName: '20250209_songjin_pony',
-        },
-        {
-            dirKey: 'maotai',
-            outName: '20250209_maotai_pony',
-        },
         // {
-        //     dirKey: 'please',
-        //     outName: '20250105_please_pony',
+        //     dirKey: 'liujiayi',
+        //     outName: '20250228_liujiayi_pony',
         // },
-        // {
-        //     dirKey: 'rekeke',
-        //     outName: '20250105_rekeke_pony',
-        // },
+        {
+            dirKey: 'meiya',
+            outName: '20250228_meiya_pony',
+        },
+        {
+            dirKey: 'qingjiujiu',
+            outName: '20250228_qingjiujiu_pony',
+        },
+        {
+            dirKey: 'erguotou',
+            outName: '20250228_erguotou_pony',
+        },
+        {
+            dirKey: 'huliena',
+            outName: '20250228_huliena_pony',
+        },
         // {
         //     dirKey: 'liaoliao',
         //     outName: '20250105_liaoliao_pony',

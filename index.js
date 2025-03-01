@@ -7,12 +7,12 @@ async function main(){
     // const imgpath = '/Users/gagaprince/Downloads/xiaozhangyu/xiaozhangyu-0003.png';
     // mov2animePreview(imgpath);
 
-    // beginBatchTask();
-    // beginInterrogate('lanyangyang');
-    // beginInterrogate('maotai');
-    // beginInterrogate('songjin');
-    // beginInterrogate('yuyexiaoxuan');
-    // beginInterrogate('lldmv');
+    // beginBatchTask(); 
+    // beginInterrogate('liujiayi');
+    // beginInterrogate('meiya');
+    // beginInterrogate('qingjiujiu');
+    // beginInterrogate('erguotou');
+    // beginInterrogate('huliena');
     // beginInterrogate('xingxing');
     // beginInterrogate('immy');
     // beginInterrogate('roulaoban');
