@@ -19,16 +19,16 @@ const commonPosPromptList = [
     //     desc:'办公室女郎',
     //     adetailerPrompt:`score_9,score_8_up,score_7_up,score_6_up,source_anime,1girl,solo,long hair,low ponytail,makeup,thin,perfect legs,long legs,thin legs,narrow waist,medium breasts,navel,collarbone,white blouse,black shorts,midriff,low rise shorts,high heels,short sleeves,necklace,earrings,office,desk,sofa,luxury,floor-to-ceiling windows,high-rise buildings,__female-poses__,looking at viewer,from above,breast focus,{女主角},<lora:子都 I 多彩荧光_1.0:0.3>,<lora:Expressive_H-000001:0.3>,expressiveh,`,
     // },
-    {
-        prompt:`score_9,score_8_up,score_7_up,score_6_up,1girl,long hair,low ponytail,black hair,perfect legs,thin,thin legs,medium breasts,skirt,sleeveless,black dress,upset,sad,__female-poses__,dim lights,dark theme,horrible atmosphere,darkness,hell,devil,looking at viewer,cowboy shot,close-up,{女主角},<lora:Expressive_H-000001:0.3>,expressiveh`,
-        desc:'恐怖环境',
-        adetailerPrompt:`score_9,score_8_up,score_7_up,score_6_up,1girl,long hair,low ponytail,black hair,perfect legs,thin,thin legs,medium breasts,skirt,sleeveless,black dress,upset,sad,__female-poses__,dim lights,dark theme,horrible atmosphere,darkness,hell,devil,looking at viewer,cowboy shot,close-up,{女主角},<lora:Expressive_H-000001:0.3>,expressiveh`,
-    },
     // {
-    //     prompt:`score_9,score_8_up,score_7_up,source_anime,1girl,solo,closed up details,lace,(floor-to-ceiling windows),high-rise buildings,dark clouds,(lightning),night,storm,long hair,black hair,makeup,red lips,eyeshadow,black dress,medium breasts,thin,sitting on bed,indoors,looking at viewer,from above,{女主角}`,
-    //     desc:'黑色闪电',
-    //     adetailerPrompt:`score_9,score_8_up,score_7_up,source_anime,1girl,solo,closed up details,lace,(floor-to-ceiling windows),high-rise buildings,dark clouds,(lightning),night,storm,long hair,black hair,makeup,red lips,eyeshadow,black dress,medium breasts,thin,sitting on bed,indoors,looking at viewer,from above,{女主角}`,
+    //     prompt:`score_9,score_8_up,score_7_up,score_6_up,1girl,long hair,low ponytail,black hair,perfect legs,thin,thin legs,medium breasts,skirt,sleeveless,black dress,upset,sad,__female-poses__,dim lights,dark theme,horrible atmosphere,darkness,hell,devil,looking at viewer,cowboy shot,close-up,{女主角},<lora:Expressive_H-000001:0.3>,expressiveh`,
+    //     desc:'恐怖环境',
+    //     adetailerPrompt:`score_9,score_8_up,score_7_up,score_6_up,1girl,long hair,low ponytail,black hair,perfect legs,thin,thin legs,medium breasts,skirt,sleeveless,black dress,upset,sad,__female-poses__,dim lights,dark theme,horrible atmosphere,darkness,hell,devil,looking at viewer,cowboy shot,close-up,{女主角},<lora:Expressive_H-000001:0.3>,expressiveh`,
     // },
+    {
+        prompt:`score_9,score_8_up,score_7_up,1girl,adult,young woman,30 years old,__dy/hair__,flustered,facepalm,medium breasts,thin,outdoors,__female-poses__,looking at viewer,__people/dresses__,{女主角},<lora:Expressive_H-000001:0.3>,expressiveh,<lora:子都 I 多彩荧光_1.0:0.5>,`,
+        desc:'随机',
+        adetailerPrompt:`score_9,score_8_up,score_7_up,1girl,adult,young woman,30 years old,__dy/hair__,flustered,facepalm,medium breasts,thin,outdoors,__female-poses__,looking at viewer,__people/dresses__,{女主角},<lora:Expressive_H-000001:0.3>,expressiveh,<lora:子都 I 多彩荧光_1.0:0.5>,`,
+    },
     // {
     //     prompt:`score_9,score_8_up,score_7_up,source_anime,1girl,solo,closed up details,from above,(undressing),dress lift,leaking one breast,nipples,long hair,black hair,makeup,red lips,eyeshadow,black dress,medium breasts,thin legs,perfect legs,sitting,indoors,((looking at viewer)),on couch,black panties,{女主角},<lora:Expressive_H-000001:0.5>,expressiveh,`,
     //     desc:'黑色连衣裙暴露',

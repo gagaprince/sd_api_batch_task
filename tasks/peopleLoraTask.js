@@ -22,7 +22,7 @@ const generateImage = async (storyPrompt, girlRole, width=720, height=1280)=>{
             "sampler_index":"Euler a",
             width,
             height,
-            "batch_size":2,
+            "batch_size":4,
             "alwayson_scripts": {
                 "ADetailer": {
                   "args": [
