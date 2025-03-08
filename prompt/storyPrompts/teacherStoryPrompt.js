@@ -25,9 +25,9 @@ const commonPosPromptList = [
     //     adetailerPrompt:`score_9,score_8_up,score_7_up,score_6_up,1girl,long hair,low ponytail,black hair,perfect legs,thin,thin legs,medium breasts,skirt,sleeveless,black dress,upset,sad,__female-poses__,dim lights,dark theme,horrible atmosphere,darkness,hell,devil,looking at viewer,cowboy shot,close-up,{女主角},<lora:Expressive_H-000001:0.3>,expressiveh`,
     // },
     {
-        prompt:`score_9,score_8_up,score_7_up,1girl,adult,young woman,30 years old,__dy/hair__,flustered,facepalm,medium breasts,thin,outdoors,__female-poses__,looking at viewer,__people/dresses__,{女主角},<lora:Expressive_H-000001:0.3>,expressiveh,<lora:子都 I 多彩荧光_1.0:0.5>,`,
+        prompt:`score_9,score_8_up,score_7_up,1girl,adult,young woman,30 years old,__dy/hair__,flustered,medium breasts,thin,outdoors,__female-poses__,looking at viewer,__people/dresses__,{女主角},<lora:Expressive_H-000001:0.3>,expressiveh,<lora:PONY_こたろう_style_こたろう_pony:0.3>,`,
         desc:'随机',
-        adetailerPrompt:`score_9,score_8_up,score_7_up,1girl,adult,young woman,30 years old,__dy/hair__,flustered,facepalm,medium breasts,thin,outdoors,__female-poses__,looking at viewer,__people/dresses__,{女主角},<lora:Expressive_H-000001:0.3>,expressiveh,<lora:子都 I 多彩荧光_1.0:0.5>,`,
+        adetailerPrompt:`score_9,score_8_up,score_7_up,1girl,adult,young woman,30 years old,__dy/hair__,flustered,medium breasts,thin,outdoors,__female-poses__,looking at viewer,__people/dresses__,{女主角},<lora:Expressive_H-000001:0.3>,expressiveh,<lora:PONY_こたろう_style_こたろう_pony:0.3>,,`,
     },
     // {
     //     prompt:`score_9,score_8_up,score_7_up,source_anime,1girl,solo,closed up details,from above,(undressing),dress lift,leaking one breast,nipples,long hair,black hair,makeup,red lips,eyeshadow,black dress,medium breasts,thin legs,perfect legs,sitting,indoors,((looking at viewer)),on couch,black panties,{女主角},<lora:Expressive_H-000001:0.5>,expressiveh,`,
