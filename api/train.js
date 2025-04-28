@@ -10,3 +10,8 @@ export const run_interrogate_task = (options)=>{
     const url = `${TRAIN_PREFIX}/api/interrogate`
     return axios.post(url, options);
 }
+
+export const run_resize_img_task = (options)=>{
+    const url = `${TRAIN_PREFIX}/api/resize_img`
+    return axios.post(url, options);
+}

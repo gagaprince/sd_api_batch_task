@@ -1,4 +1,4 @@
-import { run_batch_task, run_interrogate_task } from '../api/index'
+import { run_batch_task, run_interrogate_task, run_resize_img_task } from '../api/index'
 
 // "G:/webui/sd-webui-aki/lora-scripts-v1.7.3/train/yifu/liantiaodiaodai/train",
 export const giveMeTaskOpt = (trainDir, outputName = "test_pony")=>{
@@ -190,6 +190,16 @@ export const beginInterrogate = async (key, unloadModel)=>{
     run_interrogate_task(giveMeInterrogateOpt(key, unloadModel))
 }
 
+
+export const resize_img_task = async (key) =>{
+    await run_resize_img_task({
+        // D:\lora训练源图片\人物\3u11erfly\train\20_3u11erfly
+        in: `D:/lora训练源图片/人物/${key}/train/20_${key}`,
+        out:`G:/webui/sd-webui-aki/lora-scripts-v1.10.0/train/${key}/train/4_${key}`
+    })
+}
+
+
 export const beginInterrogateFlux = async (key, unloadModel)=>{
     // const list = ['xiaoshiqi','xiaoyishimei','yeyuanna','yizhimianyang'];
     // const list = ['xiaoyishimei']
@@ -211,4 +221,6 @@ export const beginInterrogateBatch = async(key)=>{
         "additional_tags": key
     })
 }
+
+
 
